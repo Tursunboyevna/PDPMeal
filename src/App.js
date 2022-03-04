@@ -3,22 +3,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn ojdnf uifbnpijefnvpef
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Context />} />
+      <Route path="/signUp" element={<SignUp />} />
+      <Route path="/signIn" element={<SignIn />} />
+      <Route path="/newPost" element={<NewPost />} />
+      <Route path="/settings" element={<Settings />} />
+      <Route path="/account" element={<Account />} />
+      <Route path="/readMore" element={<PostReadMore />} />
+    </Routes>
   );
 }
 
